@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fixed-Width Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        @font-face {
+            font-family: Georgia;
+            src: url("Georgia.ttf");
+        }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: rgb(26, 46, 34);
+      }
+      #page {
+        width: 1024px;
+        height: 1525px;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+        margin: 24px auto;
+      }
+      #textbox {
+        width: 768px;
+        height: 768px;
+        margin: 48px auto;
+        border: 1px dashed gray;
+      }
+      #banner {
+        width: 1024px;
+      }
+      h1 {
+        text-align: center;
+        margin: 54px 0 0 0;
+        font:
+          36pt/1.4em "Lobster",
+          script;
+        color: gainsboro;
+        text-shadow: 5px 8px 4px rgb(0, 0, 0);
+      }
+      p {
+        font: 14pt/1.4em Georgia;
+        width: 768px;
+        margin: 24px auto;
+        padding-bottom: 175px;
+        color: gainsboro;
+      }
+      img.float-left {
+        width: 300px;
+        float: left;
+        margin: 0 24px 0 0;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+      }
+      ul {
+        width: 100%;
+        margin-top: -4px;
+      }
+      li {
+        font: 14pt/2em Georgia;
+        list-style: none;
+        float: left;
+        width: 50%;
+        height: 40px;
+        text-align: center;
+        background: rgba(169, 225, 245, 0.8);
+      }
+      a li {
+        color: black;
+      }
+      a {
+        text-decoration: none;
+      }
+      li:hover,
+      a li:hover {
+        background: rgba(169, 225, 245, 0.5);
+      }
+      video {
+        display: block;
+        margin: 24px auto;
+        border: 1px solid dimgray;
+        box-shadow: 2px 3px 6px dimgray;
+      }
+      figure {
+        width: 640px;
+        margin: 0 auto;
+      }
+      figcaption {
+        font: italic 12pt/1.4 Georgia;
+        margin-top: 12px;
+        text-align: center;
+        color: gainsboro;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="page">
+      <img id="banner" src="minecraft-banner.jpg" />
+      <ul>
+        <a href="index.html"><li>Home</li></a>
+        <a href="index2.html"> <li>Minecraft Java/Bedrock</li></a>
+      </ul>
+      <h1>Minecraft</h1>
+      <p>
+        <img class="float-left" src="minecraft-coverart.jpg" /> Minecraft was
+        created by Markus "Notch" Persson in 2009, inspired by games like Dwarf
+        Fortress and Infiniminer, with the goal of making a game where players
+        could freely explore, build, and create without limitations or pressure.
+        The core idea was simple: give players a blocky world and let their
+        imagination run wild. What makes it so fun is that freedom – there's no
+        single way to play, no timer ticking down, and no "wrong" way to enjoy
+        it. You can be a creative builder constructing elaborate cities, a
+        survival adventurer battling monsters and hunting treasure, a redstone
+        engineer creating complex machines, or just someone who enjoys the
+        peaceful vibe of exploring and collecting resources. The beauty of
+        Minecraft is that it taps into something fundamental: the joy of
+        creation and problem-solving. Whether you're playing solo, with friends,
+        or watching others build incredible things online, Minecraft offers
+        endless entertainment because it's as simple or complex as you want it
+        to be. (Banner photo and small photo by Mojang Studios, Creators of Minecraft)
+      </p>
+      <figure>
+        <video poster="poster-minecraft.jpg" controls>
+          <source src="minecraft_tutorial2_compressed.mp4" />
+        </video>
+        <figcaption>
+          This video was created by me to demonstrate what minecraft is about.
+        </figcaption>
+      </figure>
+    </div>
+  </body>
+</html>
