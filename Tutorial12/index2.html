@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fixed-Width Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      @font-face {
+        font-family: Georgia;
+        src: url(Georgia.ttf);
+      }
+      body {
+        background: rgb(26, 46, 34);
+      }
+      #page {
+        width: 1024px;
+        height: 1525px;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+        margin: 24px auto;
+      }
+      #banner {
+        width: 1024px;
+      }
+      h1 {
+        text-align: center;
+        margin: 54px 0 0 0;
+        font:
+          36pt/1.4em "Lobster",
+          script;
+        color: gainsboro;
+        text-shadow: 5px 8px 4px rgb(0, 0, 0);
+      }
+      p {
+        font: 14pt/1.4em Georgia;
+        width: 768px;
+        margin: 24px auto;
+        color: gainsboro;
+      }
+      .float-left {
+        width: 300px;
+        float: left;
+        margin: 0 24px 6px 0;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+      }
+      ul {
+        width: 100%;
+        margin-top: -4px;
+      }
+      li {
+        font: 14pt/2em Georgia;
+        list-style: none;
+        float: left;
+        width: 50%;
+        height: 40px;
+        text-align: center;
+        background: rgba(169, 225, 245, 0.8);
+      }
+      a li {
+        color: black;
+      }
+      a {
+        text-decoration: none;
+      }
+      li:hover,
+      a li:hover {
+        background: rgba(169, 225, 245, 0.5);
+      }
+      #arrow {
+        width: 75px;
+        height: 75px;
+        margin: 76px 0 0 24px;
+        display: block;
+        position: absolute;
+        bottom: -550px;
+        left: 512px;
+      }
+      video {
+        width: 640px;
+        display: block;
+        margin: 80px auto 0 auto;
+      } /* Unvisited link */
+      a:link {
+        color: green;
+      }
+
+      /* Visited link */
+      a:visited {
+        color: red;
+      }
+
+      /* Mouse over link */
+      a:hover {
+        color: darkgreen;
+      }
+
+      /* Selected link */
+      a:active {
+        color: green;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="page">
+      <img id="banner" src="minecraft-banner.jpg" />
+      <ul>
+        <!-- relative or local link-->
+        <a href="index.html"><li>Home</li></a>
+       <a href="index2.html"> <li>Minecraft Java/Bedrock </li></a> 
+      </ul>
+
+      <h1>Mojang Studios</h1>
+      <p>
+        <img class="float-left" src="mojang-logo.jpg" />
+        <!-- absolute or global link -->
+        <a
+          href="https://www.minecraft.net/en-us/about-minecraft"
+          target="_blank"
+          >Mojang Studios</a> is the Swedish video game developer that now owns and maintains
+        Minecraft after Microsoft acquired them in 2014 for $2.5 billion. Since
+        then, Mojang has been responsible for keeping Minecraft alive and
+        thriving by regularly releasing major updates that add new biomes,
+        blocks, mobs, and gameplay features that keep the game fresh and
+        exciting. They've expanded Minecraft across multiple platforms – from PC
+        and consoles to mobile devices – making it accessible to millions of
+        players worldwide.Their commitment to listening to player feedback and continuously improving
+        the game has made Minecraft one of the best-selling and most beloved
+        games of all time. Without Mojang's dedication to development and
+        community support, Minecraft probably wouldn't have remained relevant
+        for over a decade; instead, they've turned it into a cultural phenomenon
+        that keeps growing stronger.
+      </p>
+      <a href="mailto:info@mojang.net?subject=Minecraft Java/Bedrock Inquiry">
+        <p>Email Mojang</p></a
+      >
+      <video poster="poster-welcome.jpg" controls>
+        <source src="welcome_tutorial2.mp4" />
+      </video>
+      <!-- Anchor Link -->
+      <a href="#banner"> <img id="arrow" src="arrow.png" /></a>
+    </div>
+  </body>
+</html>
